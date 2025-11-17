@@ -1,37 +1,184 @@
-body {
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
 }
 
+/* === HEADER === */
+header {
+    width: 100%;
+    background: #0d6efd;
+    padding: 18px 25px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 6px solid #e6e6e6;
+}
+
+/* === CONTAINER === */
+.container {
+    width: 90%;
+    margin: 35px auto;
+}
+
+/* === JUDUL HALAMAN === */
+.page-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* === FORM === */
+.form-container {
+    width: 100%;
+    background: #fff;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.form-table td:first-child {
+    width: 200px;
+    font-weight: bold;
+}
+
+/* === INPUT === */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* === BUTTON STYLE === */
+.button-group {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 17px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Tombol Hijau Update / Tambah */
+.btn-green {
+    background: #28a745;
+    color: white;
+}
+.btn-green:hover {
+    background: #218838;
+}
+
+/* Tombol Merah */
+.btn-red {
+    background: #dc3545;
+    color: white;
+}
+.btn-red:hover {
+    background: #c82333;
+}
+
+/* === TOMBOL TAMBAH DATA (Di INDEX) === */
+.btn-adddata {
+    background: #198754;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    float: right;
+    margin-bottom: 15px;
+}
+.btn-adddata:hover {
+    background: #157347;
+}
+
+/* === SEARCH BOX === */
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    width: 260px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background: #0d6efd;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background: #0b5ed7;
+}
+
+/* === TABLE (INDEX) === */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 15px;
 }
 
-table,
-th,
-td {
-    border: 1px solid #ccc;
+table th {
+    background: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
 }
 
-th,
-td {
-    padding: 10px;
-    text-align: left;
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
 }
 
-a {
+/* Edit icon style */
+.btn-edit {
+    background: #0d6efd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
     text-decoration: none;
-    color: blue;
+}
+.btn-edit:hover {
+    background: #0b5ed7;
 }
 
-form input,
-form textarea,
-form button {
-    display: block;
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 300px;
+/* Hapus icon */
+.btn-delete {
+    background: #dc3545;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.btn-delete:hover {
+    background: #bb2d3b;
 }
